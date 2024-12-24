@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tampilan Kegiatan</title>
+  <link rel="stylesheet" href="p1.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Tombol Kembali yang mengarah ke Beranda.php -->
+    <a href="Beranda.php" class="back-button">&larr;</a>
+
+    <!-- Form untuk Mengirim Data -->
+    <form action="proses.php" method="POST">
+      <!-- Judul -->
+      <div class="title">
+        <strong>Apakah Anda ingin berpartisipasi dalam kegiatan seni, olahraga, organisasi, atau berbasis komunitas daerah?</strong>
+      </div>
+
+      <!-- Opsi -->
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="question1" value="Seni" required>
+          <img src="aceh.png" alt="Seni">
+          <p>Seni</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="question1" value="Organisasi" required>
+          <img src="pmd.png" alt="Organisasi">
+          <p>Organisasi</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="question1" value="Olahraga" required>
+          <img src="olahraga.jpg" alt="Olahraga">
+          <p>Olahraga</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="question1" value="Komunitas Daerah" required>
+          <img src="betawi.jpg" alt="Komunitas Daerah">
+          <p>Komunitas Daerah</p>
+        </label>
+      </div>
+
+      <!-- Tombol Berikutnya -->
+      <button type="submit" class="next-button">Berikutnya</button>
+    </form>
+  </div>
+</body>
+
+</html>

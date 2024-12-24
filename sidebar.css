@@ -1,0 +1,59 @@
+/* Sidebar */
+.sidebar {
+    width: 80px;
+    /* Lebar sidebar lebih sempit */
+    background-color: #d84848;
+    /* Warna latar belakang yang lebih elegan */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    transition: all 0.3s ease-in-out;
+    /* Efek transisi untuk perubahan lebar atau warna */
+}
+
+.sidebar button {
+    all: unset;
+    /* Hapus semua gaya bawaan tombol */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    /* Ukuran tombol (sesuaikan sesuai kebutuhan) */
+    height: 40px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+    /* Ukuran font lebih besar untuk ikon */
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    /* Menambahkan transformasi */
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    color: #ffeb3b;
+    /* Warna teks saat hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Background yang lebih halus */
+    transform: translateX(5px);
+    /* Menggeser sedikit ke kanan agar terasa lebih dinamis */
+}
+
+.icon {
+    font-size: 1.6rem;
+    /* Ukuran font yang lebih besar agar ikon terlihat jelas */
+    margin-bottom: 5px;
+}

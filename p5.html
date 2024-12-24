@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanyaan 5</title>
+  <link rel="stylesheet" href="p5.css">
+</head>
+<body>
+  <div class="container">
+    <form action="proses_p5.php" method="POST">
+      <div class="title">
+        <strong>Apakah Anda tertarik dengan UKM yang mendukung karir atau pengembangan diri?</strong>
+      </div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="question5" value="Karir" required>
+          <img src="pmd.png" alt="Karir">
+          <p>Karir</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="question5" value="Pengembangan Diri" required>
+          <img src="rsr.png" alt="Pengembangan Diri">
+          <p>Pengembangan Diri</p>
+        </label>
+      </div>
+      <button type="submit" class="next-button">Selesai</button>
+    </form>
+  </div>
+</body>
+</html>

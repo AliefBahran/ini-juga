@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #A24A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+  /* Tombol Kembali */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .back-button:hover {
+    color: white;
+  }
+
+/* Judul */
+.title {
+    font-size: 18px;
+    color: #343A40;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* Pilihan */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.option {
+    background-color: #EDEDED;
+    border: none;
+    color: #343A40;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.option:hover {
+    background-color: #C4C4C4;
+    transform: scale(1.03);
+}
+
+.option:active {
+    background-color: #A24A4A;
+    color: white;
+}
+
+/* Tombol Berikutnya */
+.next-button {
+    display: inline-block;
+    background-color: #EDEDED;
+    color: #343A40;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.next-button:hover {
+    background-color: #C4C4C4;
+    transform: scale(1.03);
+}
+
+.next-button:active {
+    background-color: #A24A4A;
+    color: white;
+}

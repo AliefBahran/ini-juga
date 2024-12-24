@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanyaan 2</title>
+  <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Form untuk Mengirim Data -->
+    <form action="proses_p2.php" method="POST">
+      <!-- Judul -->
+      <div class="title">
+        <strong>Apakah Anda ingin fokus pada kegiatan fisik atau non-fisik?</strong>
+      </div>
+      
+      <!-- Opsi -->
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="question2" value="Fisik" required>
+          <img src="krt.png" alt="Fisik">
+          <p>Fisik</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="question2" value="Non-Fisik" required>
+          <img src="ctr.png" alt="Non-Fisik">
+          <p>Non-Fisik</p>
+        </label>
+      </div>
+      
+      <!-- Tombol Berikutnya -->
+      <button type="submit" class="next-button">Berikutnya</button>
+    </form>
+  </div>
+</body>
+</html>

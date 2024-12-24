@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanyaan 4</title>
+  <style>
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Body */
+    body {
+        background-color: #A24A4A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    /* Container */
+    .container {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px 20px;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    /* Judul */
+    .title {
+        font-size: 18px;
+        color: #343A40;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        font-weight: bold;
+    }
+
+    /* Pilihan */
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #EDEDED;
+        border: none;
+        color: #343A40;
+        font-size: 16px;
+        padding: 15px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .option:hover {
+        background-color: #C4C4C4;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .option:active {
+        background-color: #A24A4A;
+        color: white;
+    }
+
+    /* Menambahkan gaya untuk gambar agar lebih profesional */
+    .option img {
+        width: 60px;   /* Menentukan lebar gambar */
+        height: 60px;  /* Menentukan tinggi gambar */
+        object-fit: cover; /* Memastikan gambar tetap proporsional */
+        border-radius: 50%; /* Membuat gambar berbentuk bulat */
+        margin-bottom: 10px; /* Memberikan jarak antara gambar dan teks */
+        transition: transform 0.3s ease;
+    }
+
+    .option img:hover {
+        transform: scale(1.1); /* Efek zoom saat hover pada gambar */
+    }
+
+    .option p {
+        margin-top: 10px;
+    }
+
+    /* Tombol Berikutnya */
+    .next-button {
+        display: inline-block;
+        background-color: #EDEDED;
+        color: #343A40;
+        text-decoration: none;
+        padding: 15px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        font-weight: bold;
+    }
+
+    .next-button:hover {
+        background-color: #C4C4C4;
+        transform: scale(1.03);
+    }
+
+    .next-button:active {
+        background-color: #A24A4A;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="proses_p4.php" method="POST">
+      <div class="title">
+        <strong>Apakah Anda tertarik dengan kegiatan sosial, religius, atau lingkungan?</strong>
+      </div>
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="question4" value="Sosial" required>
+          <img src="pmi.png" alt="Sosial">
+          <p>Sosial</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="question4" value="Religius" required>
+          <img src="dkwh.png" alt="Religius">
+          <p>Religius</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="question4" value="Lingkungan" required>
+          <img src="mapala.png" alt="Lingkungan">
+          <p>Lingkungan</p>
+        </label>
+      </div>
+      <button type="submit" class="next-button">Berikutnya</button>
+    </form>
+  </div>
+</body>
+</html>
